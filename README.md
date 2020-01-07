@@ -12,7 +12,7 @@ Learn more about Python: <https://www.python.org/>
 ## Supported Tags and Respective `Dockerfile` Links
 
   - [`latest` (master/Dockerfile)](https://github.com/alvistack/docker-python/blob/master/Dockerfile)
-  - [`3` (master/Dockerfile)](https://github.com/alvistack/docker-python/blob/master/Dockerfile)
+  - [`3` (3/Dockerfile)](https://github.com/alvistack/docker-python/blob/3/Dockerfile)
 
 ## Overview
 
