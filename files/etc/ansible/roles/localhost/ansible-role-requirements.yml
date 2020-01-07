@@ -34,6 +34,3 @@
 
 - name: gosu
   src: https://github.com/alvistack/ansible-role-gosu/archive/master.tar.gz
-
-- name: git
-  src: https://github.com/alvistack/ansible-role-git/archive/master.tar.gz
