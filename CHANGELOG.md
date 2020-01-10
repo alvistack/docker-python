@@ -1,8 +1,10 @@
 # Docker Image Packaging for Python
 
-## 3.6.9-XalvistackY - TBC
+## 3.8.1-XalvistackY - TBC
 
 ### Major Changes
+
+  - Support Python 3.6/3.7/3.8 with Ubuntu PPA
 
 ## 3.6.9-2alvistack1 - 2020-01-07
 
