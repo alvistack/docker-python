@@ -21,7 +21,7 @@ ENV TZ     "UTC"
 
 ENV PYTHON_RELEASE "3.8"
 
-ENTRYPOINT [ "dumb-init", "--", "docker-entrypoint.sh" ]
+ENTRYPOINT [ "tini", "-g", "--", "docker-entrypoint.sh" ]
 CMD        [ "python3.8" ]
 
 # Hotfix for en_US.utf8 locale
