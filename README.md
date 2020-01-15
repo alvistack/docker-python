@@ -29,7 +29,7 @@ Start Python:
     # Pull latest image
     docker pull alvistack/python
     
-    # Run with built-in web server
+    # Run as detach
     docker run \
         -itd \
         --rm \

@@ -4,6 +4,12 @@
 
 ### Major Changes
 
+## 3.8.1-3alvistack1 - 2020-01-15
+
+### Major Changes
+
+  - Replace `dumb-init` with `tini`, as like as `docker --init`
+  - Include release specific vars and tasks
   - Support Python 3.6/3.7/3.8 with Ubuntu PPA
 
 ## 3.6.9-2alvistack1 - 2020-01-07
