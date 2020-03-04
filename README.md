@@ -11,14 +11,19 @@ Learn more about Python: <https://www.python.org/>
 
 ## Supported Tags and Respective `Dockerfile` Links
 
-  - [`latest` (master/Dockerfile)](https://github.com/alvistack/docker-python/blob/master/Dockerfile)
-  - [`3.8` (3.8/Dockerfile)](https://github.com/alvistack/docker-python/blob/3.8/Dockerfile)
-  - [`3.7` (3.7/Dockerfile)](https://github.com/alvistack/docker-python/blob/3.7/Dockerfile)
-  - [`3.6` (3.6/Dockerfile)](https://github.com/alvistack/docker-python/blob/3.6/Dockerfile)
+  - [`3.8`, `latest`](https://github.com/alvistack/docker-pythong/blob/master/molecule/3.8/Dockerfile.j2)
+  - [`3.7`](https://github.com/alvistack/docker-pythong/blob/master/molecule/3.7/Dockerfile.j2)
+  - [`3.6`](https://github.com/alvistack/docker-pythong/blob/master/molecule/3.6/Dockerfile.j2)
 
 ## Overview
 
 This Docker container makes it easy to get an instance of Python up and running.
+
+Based on [Official Ubuntu Docker Image](https://hub.docker.com/_/ubuntu/) with some minor hack:
+
+  - Minimized `Dockerfile` for meta data definition
+  - Provision by Ansible and Molecule Docker driver in single layer
+  - Handle `ENTRYPOINT` with [tini](https://github.com/krallin/tini)
 
 ### Quick Start
 
