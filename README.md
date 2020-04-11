@@ -1,6 +1,6 @@
 # Docker Image Packaging for Python
 
-[![Travis](https://img.shields.io/travis/alvistack/docker-python.svg)](https://travis-ci.org/alvistack/docker-python)
+[![Travis](https://img.shields.io/travis/com/alvistack/docker-python.svg)](https://travis-ci.com/alvistack/docker-python)
 [![GitHub release](https://img.shields.io/github/release/alvistack/docker-python.svg)](https://github.com/alvistack/docker-python/releases)
 [![GitHub license](https://img.shields.io/github/license/alvistack/docker-python.svg)](https://github.com/alvistack/docker-python/blob/master/LICENSE)
 [![Docker Pulls](https://img.shields.io/docker/pulls/alvistack/python.svg)](https://hub.docker.com/r/alvistack/python/)
@@ -50,7 +50,7 @@ The `latest` tag matches the most recent [GitHub Release](https://github.com/alv
 
 ### `alvistack/python:<version>`
 
-The version tags are rolling release rebuild by [Travis](https://travis-ci.org/alvistack/docker-python) in weekly basis. Thus using these tags will ensure you are running the latest packages provided by the base image project.
+The version tags are rolling release rebuild by [Travis](https://travis-ci.com/alvistack/docker-python) in weekly basis. Thus using these tags will ensure you are running the latest packages provided by the base image project.
 
 ## License
 
