@@ -21,6 +21,13 @@
   register: result
   until: result is succeeded
 
+- name: apt-get install software-properties-common
+  apt:
+    name: "software-properties-common"
+    state: "present"
+  register: result
+  until: result is succeeded
+
 - name: apt-add-repository
   apt_repository:
     repo: "{{ item.repo }}"
