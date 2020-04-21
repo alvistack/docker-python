@@ -14,12 +14,23 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-_apt_repository:
-  "3.8":
-    - { state: "present", repo: "ppa:deadsnakes/ppa" }
+_apt_key:
+  "3.8": []
   "3.7":
-    - { state: "present", repo: "ppa:deadsnakes/ppa" }
-  "3.6": []
+    - url: "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0xF23C5A6CF475977595C89F51BA6932366A755776"
+      id: "F23C5A6CF475977595C89F51BA6932366A755776"
+      state: "present"
+  "3.6":
+    - url: "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0xF23C5A6CF475977595C89F51BA6932366A755776"
+      id: "F23C5A6CF475977595C89F51BA6932366A755776"
+      state: "present"
+
+_apt_repository:
+  "3.8": []
+  "3.7":
+    - { state: "present", repo: "deb http://ppa.launchpad.net/deadsnakes/ppa/ubuntu focal main" }
+  "3.6":
+    - { state: "present", repo: "deb http://ppa.launchpad.net/deadsnakes/ppa/ubuntu focal main" }
 
 _apt:
   "3.8":
