@@ -4,6 +4,7 @@
 
 ### Major Changes
 
+  - Replace `tini` with `catatonit`
   - Rename `post_tasks.yml` as `side_effect.yml`
 
 ## 3.8.2-4alvistack4 - 2020-03-05
