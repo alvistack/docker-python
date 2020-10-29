@@ -9,11 +9,11 @@ Python is an interpreted, interactive, object-oriented, open-source programming 
 
 Learn more about Python: <https://www.python.org/>
 
-## Supported Tags and Respective `Dockerfile` Links
+## Supported Tags and Respective Packer Template Links
 
-  - [`3.8`, `latest`](https://github.com/alvistack/docker-pythong/blob/master/molecule/3.8/Dockerfile.j2)
-  - [`3.7`](https://github.com/alvistack/docker-pythong/blob/master/molecule/3.7/Dockerfile.j2)
-  - [`3.6`](https://github.com/alvistack/docker-pythong/blob/master/molecule/3.6/Dockerfile.j2)
+  - [`3.8`, `latest`](https://github.com/alvistack/docker-pythong/blob/master/packer/3.8/packer.json)
+  - [`3.7`](https://github.com/alvistack/docker-pythong/blob/master/packer/3.7/packer.json)
+  - [`3.6`](https://github.com/alvistack/docker-pythong/blob/master/packer/3.6/packer.json)
 
 ## Overview
 
@@ -21,8 +21,7 @@ This Docker container makes it easy to get an instance of Python up and running.
 
 Based on [Official Ubuntu Docker Image](https://hub.docker.com/_/ubuntu/) with some minor hack:
 
-  - Minimized `Dockerfile` for meta data definition
-  - Provision by Ansible and Molecule Docker driver in single layer
+  - Packaging by Packer Docker builder and Ansible provisioner in single layer
   - Handle `ENTRYPOINT` with [catatonit](https://github.com/openSUSE/catatonit)
 
 ### Quick Start
