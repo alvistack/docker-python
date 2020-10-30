@@ -18,36 +18,38 @@
   remote_user: root
   become: true
   tasks:
-    - name: include default variables
-      include_vars: "./vars/main.yml"
+    - name: apt-get install gnupg
+      apt:
+        name: "gnupg"
+        state: "present"
+      register: result
+      until: result is succeeded
 
-    - name: include release specific variables
-      include_vars: "{{ lookup('first_found', _params) }}"
-      vars:
-        _params:
-          files:
-            - "{{ ansible_distribution | lower }}-{{ ansible_distribution_version | lower }}.yml"
-            - "{{ ansible_distribution | lower }}-{{ ansible_distribution_major_version | lower }}.yml"
-            - "{{ ansible_os_family | lower }}-{{ ansible_distribution_major_version | lower }}.yml"
-            - "{{ ansible_distribution | lower }}.yml"
-            - "{{ ansible_os_family | lower }}.yml"
-          paths:
-            - "./vars"
-      ignore_errors: true
+    - name: apt-key add
+      apt_key:
+        url: "{{ item.url }}"
+        id: "{{ item.id }}"
+        state: "{{ item.state }}"
+      loop: "{{ python_apt_key[python_release] }}"
+      register: result
+      until: result is succeeded
+      tags: python
 
-    - name: include release specific tasks
-      include_tasks: "{{ lookup('first_found', _params) }}"
-      vars:
-        _params:
-          files:
-            - "{{ ansible_distribution | lower }}-{{ ansible_distribution_version | lower }}.yml"
-            - "{{ ansible_distribution | lower }}-{{ ansible_distribution_major_version | lower }}.yml"
-            - "{{ ansible_os_family | lower }}-{{ ansible_distribution_major_version | lower }}.yml"
-            - "{{ ansible_distribution | lower }}.yml"
-            - "{{ ansible_os_family | lower }}.yml"
-          paths:
-            - "./tasks"
-      ignore_errors: true
+    - name: apt-add-repository
+      apt_repository:
+        repo: "{{ item.repo }}"
+        state: "{{ item.state }}"
+      loop: "{{ python_apt_repository[python_release] }}"
+      register: result
+      until: result is succeeded
+
+    - name: apt-get install
+      apt:
+        name: "{{ item.name }}"
+        state: "{{ item.state }}"
+      loop: "{{ python_apt[python_release] }}"
+      register: result
+      until: result is succeeded
 
     - name: prepare directories
       file:
