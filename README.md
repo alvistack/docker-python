@@ -11,9 +11,9 @@ Learn more about Python: <https://www.python.org/>
 
 ## Supported Tags and Respective Packer Template Links
 
-  - [`3.8`, `latest`](https://github.com/alvistack/docker-pythong/blob/master/packer/3.8/packer.json)
-  - [`3.7`](https://github.com/alvistack/docker-pythong/blob/master/packer/3.7/packer.json)
-  - [`3.6`](https://github.com/alvistack/docker-pythong/blob/master/packer/3.6/packer.json)
+  - [`3.8`, `latest`](https://github.com/alvistack/docker-pythong/blob/master/packer/docker-3.8/packer.json)
+  - [`3.7`](https://github.com/alvistack/docker-pythong/blob/master/packer/docker-3.7/packer.json)
+  - [`3.6`](https://github.com/alvistack/docker-pythong/blob/master/packer/docker-3.6/packer.json)
 
 ## Overview
 
