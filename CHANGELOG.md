@@ -4,6 +4,10 @@
 
 ### Major Changes
 
+## 3.8.5-4alvistack2 - 2020-12-09
+
+### Major Changes
+
   - Migrate from Travis CI to GitLab CI
   - Revamp with Packer
 
