@@ -1,9 +1,9 @@
 # Docker Image Packaging for Python
 
-[![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline/alvistack/docker-python/master)](https://gitlab.com/alvistack/docker-python/-/pipelines)
+[![GitLab pipeline status](https://img.shields.io/gitlab/pipeline/alvistack/docker-python/master)](https://gitlab.com/alvistack/docker-python/-/pipelines)
 [![GitHub release](https://img.shields.io/github/release/alvistack/docker-python.svg)](https://github.com/alvistack/docker-python/releases)
 [![GitHub license](https://img.shields.io/github/license/alvistack/docker-python.svg)](https://github.com/alvistack/docker-python/blob/master/LICENSE)
-[![Docker Pulls](https://img.shields.io/docker/pulls/alvistack/python.svg)](https://hub.docker.com/r/alvistack/python/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/alvistack/python-3.8.svg)](https://hub.docker.com/r/alvistack/python-3.8)
 
 Python is an interpreted, interactive, object-oriented, open-source programming language.
 
@@ -11,9 +11,12 @@ Learn more about Python: <https://www.python.org/>
 
 ## Supported Tags and Respective Packer Template Links
 
-  - [`3.8`, `latest`](https://github.com/alvistack/docker-pythong/blob/master/packer/docker-3.8/packer.json)
-  - [`3.7`](https://github.com/alvistack/docker-pythong/blob/master/packer/docker-3.7/packer.json)
-  - [`3.6`](https://github.com/alvistack/docker-pythong/blob/master/packer/docker-3.6/packer.json)
+  - [`alvistack/python-3.8`](https://hub.docker.com/r/alvistack/python-3.8)
+      - [`packer/docker-3.8/packer.json`](https://github.com/alvistack/docker-python/blob/master/packer/docker-3.8/packer.json)
+  - [`alvistack/python-3.7`](https://hub.docker.com/r/alvistack/python-3.7)
+      - [`packer/docker-3.7/packer.json`](https://github.com/alvistack/docker-python/blob/master/packer/docker-3.7/packer.json)
+  - [`alvistack/python-3.6`](https://hub.docker.com/r/alvistack/python-3.6)
+      - [`packer/docker-3.6/packer.json`](https://github.com/alvistack/docker-python/blob/master/packer/docker-3.6/packer.json)
 
 ## Overview
 
@@ -43,13 +46,13 @@ Start Python:
 
 ## Versioning
 
-### `alvistack/python:latest`
+### `YYYYMMDD.Y.Z`
 
-The `latest` tag matches the most recent [GitHub Release](https://github.com/alvistack/docker-python/releases) of this repository. Thus using `alvistack/python:latest` or `alvistack/python` will ensure you are running the most up to date stable version of this image.
+Release tags could be find from [GitHub Release](https://github.com/alvistack/docker-python/releases) of this repository. Thus using these tags will ensure you are running the most up to date stable version of this image.
 
-### `alvistack/python:<version>`
+### `YYYYMMDD.0.0`
 
-The version tags are rolling release rebuild by [Travis](https://travis-ci.com/alvistack/docker-python) in weekly basis. Thus using these tags will ensure you are running the latest packages provided by the base image project.
+Version tags ended with `.0.0` are rolling release rebuild by [GitLab pipeline](https://gitlab.com/alvistack/docker-python/-/pipelines) in weekly basis. Thus using these tags will ensure you are running the latest packages provided by the base image project.
 
 ## License
 
