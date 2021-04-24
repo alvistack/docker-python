@@ -34,14 +34,14 @@ For the `VOLUME` directory that is used to store the repository data (amongst ot
 Start Python:
 
     # Pull latest image
-    docker pull alvistack/python
+    docker pull alvistack/python-3.8
     
     # Run as detach
     docker run \
         -itd \
         --rm \
         --name python \
-        alvistack/python \
+        alvistack/python-3.8 \
         python --version
 
 ## Versioning
