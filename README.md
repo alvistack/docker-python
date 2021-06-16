@@ -4,7 +4,9 @@
 [![GitHub release](https://img.shields.io/github/release/alvistack/docker-python.svg)](https://github.com/alvistack/docker-python/releases)
 [![GitHub license](https://img.shields.io/github/license/alvistack/docker-python.svg)](https://github.com/alvistack/docker-python/blob/master/LICENSE)
 [![Docker Pulls](https://img.shields.io/docker/pulls/alvistack/python-3.8.svg)](https://hub.docker.com/r/alvistack/python-3.8)
+
 Python is an interpreted, interactive, object-oriented, open-source programming language.
+
 Learn more about Python: <https://www.python.org/>
 
 ## Supported Tags and Respective Packer Template Links
@@ -19,6 +21,7 @@ Learn more about Python: <https://www.python.org/>
 ## Overview
 
 This Docker container makes it easy to get an instance of Python up and running.
+
 Based on [Official Ubuntu Docker Image](https://hub.docker.com/_/ubuntu/) with some minor hack:
 
   - Packaging by Packer Docker builder and Ansible provisioner in single layer
@@ -27,16 +30,19 @@ Based on [Official Ubuntu Docker Image](https://hub.docker.com/_/ubuntu/) with s
 ### Quick Start
 
 For the `VOLUME` directory that is used to store the repository data (amongst other things) we recommend mounting a host directory as a [data volume](https://docs.docker.com/engine/tutorials/dockervolumes/#/data-volumes), or via a named volume if using a docker version \>= 1.9.
+
 Start Python:
-\# Pull latest image
-docker pull alvistack/python-3.8
-\# Run as detach
-docker run   
-\-itd   
-\--rm   
-\--name python   
-alvistack/python-3.8   
-python --version
+
+    # Pull latest image
+    docker pull alvistack/python-3.8
+    
+    # Run as detach
+    docker run \
+        -itd \
+        --rm \
+        --name python \
+        alvistack/python-3.8 \
+        python --version
 
 ## Versioning
 
