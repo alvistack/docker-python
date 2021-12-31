@@ -3,7 +3,7 @@
 <img src="/alvistack.svg" width="75" alt="AlviStack">
 
 [![GitLab pipeline status](https://img.shields.io/gitlab/pipeline/alvistack/docker-python/master)](https://gitlab.com/alvistack/docker-python/-/pipelines)
-[![GitHub release](https://img.shields.io/github/release/alvistack/docker-python.svg)](https://github.com/alvistack/docker-python/releases)
+[![GitHub tag](https://img.shields.io/github/tag/alvistack/docker-python.svg)](https://github.com/alvistack/docker-python/tags)
 [![GitHub license](https://img.shields.io/github/license/alvistack/docker-python.svg)](https://github.com/alvistack/docker-python/blob/master/LICENSE)
 [![Docker Pulls](https://img.shields.io/docker/pulls/alvistack/python-3.8.svg)](https://hub.docker.com/r/alvistack/python-3.8)
 
@@ -50,7 +50,7 @@ Start Python:
 
 ### `YYYYMMDD.Y.Z`
 
-Release tags could be find from [GitHub Release](https://github.com/alvistack/docker-python/releases) of this repository. Thus using these tags will ensure you are running the most up to date stable version of this image.
+Release tags could be find from [GitHub Release](https://github.com/alvistack/docker-python/tags) of this repository. Thus using these tags will ensure you are running the most up to date stable version of this image.
 
 ### `YYYYMMDD.0.0`
 
