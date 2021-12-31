@@ -10,7 +10,7 @@
         "CMD [\"python3.8\"]"
       ],
       "commit": true,
-      "image": "ubuntu:20.04",
+      "image": "ubuntu:18.04",
       "privileged": true,
       "type": "docker"
     }

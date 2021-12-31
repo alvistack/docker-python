@@ -4,6 +4,9 @@
 
 ### Major Changes
 
+  - Support Python 3.9
+  - Remove Python 3.6 support
+
 ## 20211231.1.3 - 2021-12-31
 
 ### Major Changes
