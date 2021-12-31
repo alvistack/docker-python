@@ -7,10 +7,10 @@
         "ENV SHELL /bin/bash",
         "ENV TZ UTC",
         "ENTRYPOINT [\"catatonit\", \"-g\", \"--\", \"docker-entrypoint.sh\"]",
-        "CMD [\"python3.6\"]"
+        "CMD [\"python3.9\"]"
       ],
       "commit": true,
-      "image": "ubuntu:20.04",
+      "image": "ubuntu:18.04",
       "privileged": true,
       "type": "docker"
     }

@@ -5,7 +5,7 @@
 [![GitLab pipeline status](https://img.shields.io/gitlab/pipeline/alvistack/docker-python/master)](https://gitlab.com/alvistack/docker-python/-/pipelines)
 [![GitHub tag](https://img.shields.io/github/tag/alvistack/docker-python.svg)](https://github.com/alvistack/docker-python/tags)
 [![GitHub license](https://img.shields.io/github/license/alvistack/docker-python.svg)](https://github.com/alvistack/docker-python/blob/master/LICENSE)
-[![Docker Pulls](https://img.shields.io/docker/pulls/alvistack/python-3.8.svg)](https://hub.docker.com/r/alvistack/python-3.8)
+[![Docker Pulls](https://img.shields.io/docker/pulls/alvistack/python-3.9.svg)](https://hub.docker.com/r/alvistack/python-3.9)
 
 Python is an interpreted, interactive, object-oriented, open-source programming language.
 
@@ -13,12 +13,12 @@ Learn more about Python: <https://www.python.org/>
 
 ## Supported Tags and Respective Packer Template Links
 
+  - [`alvistack/python-3.9`](https://hub.docker.com/r/alvistack/python-3.9)
+      - [`packer/docker-3.9/packer.json`](https://github.com/alvistack/docker-python/blob/master/packer/docker-3.9/packer.json)
   - [`alvistack/python-3.8`](https://hub.docker.com/r/alvistack/python-3.8)
       - [`packer/docker-3.8/packer.json`](https://github.com/alvistack/docker-python/blob/master/packer/docker-3.8/packer.json)
   - [`alvistack/python-3.7`](https://hub.docker.com/r/alvistack/python-3.7)
       - [`packer/docker-3.7/packer.json`](https://github.com/alvistack/docker-python/blob/master/packer/docker-3.7/packer.json)
-  - [`alvistack/python-3.6`](https://hub.docker.com/r/alvistack/python-3.6)
-      - [`packer/docker-3.6/packer.json`](https://github.com/alvistack/docker-python/blob/master/packer/docker-3.6/packer.json)
 
 ## Overview
 
@@ -36,14 +36,14 @@ For the `VOLUME` directory that is used to store the repository data (amongst ot
 Start Python:
 
     # Pull latest image
-    docker pull alvistack/python-3.8
+    docker pull alvistack/python-3.9
     
     # Run as detach
     docker run \
         -itd \
         --rm \
         --name python \
-        alvistack/python-3.8 \
+        alvistack/python-3.9 \
         python --version
 
 ## Versioning
