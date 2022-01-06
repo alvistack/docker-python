@@ -4,6 +4,7 @@
 
 ### Major Changes
 
+  - Skip package upgrade before running molecule
   - Replace docker with podman
   - Support Python 3.9
   - Remove Python 3.6 support
