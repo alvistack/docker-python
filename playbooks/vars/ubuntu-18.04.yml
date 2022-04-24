@@ -15,34 +15,34 @@
 # limitations under the License.
 
 python_apt_key:
+  "3.10":
+    - url: "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0xF23C5A6CF475977595C89F51BA6932366A755776"
+      id: "F23C5A6CF475977595C89F51BA6932366A755776"
+      state: "present"
   "3.9":
     - url: "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0xF23C5A6CF475977595C89F51BA6932366A755776"
       id: "F23C5A6CF475977595C89F51BA6932366A755776"
       state: "present"
   "3.8":
-    - url: "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0xF23C5A6CF475977595C89F51BA6932366A755776"
-      id: "F23C5A6CF475977595C89F51BA6932366A755776"
-      state: "present"
-  "3.7":
     - url: "https://keyserver.ubuntu.com/pks/lookup?op=get&search=0xF23C5A6CF475977595C89F51BA6932366A755776"
       id: "F23C5A6CF475977595C89F51BA6932366A755776"
       state: "present"
 
 python_apt_repository:
+  "3.10":
+    - { state: "present", repo: "deb http://ppa.launchpad.net/deadsnakes/ppa/ubuntu bionic main" }
   "3.9":
     - { state: "present", repo: "deb http://ppa.launchpad.net/deadsnakes/ppa/ubuntu bionic main" }
   "3.8":
     - { state: "present", repo: "deb http://ppa.launchpad.net/deadsnakes/ppa/ubuntu bionic main" }
-  "3.7":
-    - { state: "present", repo: "deb http://ppa.launchpad.net/deadsnakes/ppa/ubuntu bionic main" }
 
 python_apt:
+  "3.10":
+    - { state: "latest", name: "python3.10" }
+    - { state: "latest", name: "python3.10-dev" }
   "3.9":
     - { state: "latest", name: "python3.9" }
     - { state: "latest", name: "python3.9-dev" }
   "3.8":
     - { state: "latest", name: "python3.8" }
     - { state: "latest", name: "python3.8-dev" }
-  "3.7":
-    - { state: "latest", name: "python3.7" }
-    - { state: "latest", name: "python3.7-dev" }
